@@ -5,10 +5,11 @@ def tetno(A):
 
 
 i=0
+plik = open("plik.csv", "w")
+
 for i in range (0,100):
-    print(i,",",i,",", tetno(i))
-    plik = open("plik.csv", "a")
-    plik.write
+    # print(i,",",i,",", tetno(i))
+    plik.write(f"{i}, {i}, {tetno(i)}\n")
 
 
 
